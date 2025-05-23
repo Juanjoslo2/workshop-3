@@ -90,8 +90,10 @@ docker-compose up -d
 ├── notebooks/
 │   ├── 01_ETL.ipynb
 │   └── 02_Model_training.ipynb
-├── producer.py
-└── consumer.py
+├── streaming/
+│   ├── producer.py
+│   └── consumer.py
+└──
 ```
 
 ---
@@ -104,7 +106,7 @@ docker-compose up -d
 - `notebooks/01_ETL.ipynb`: Limpieza y transformación de datos.
 - `notebooks/02_Model_training.ipynb`: Entrenamiento y evaluación de modelos.
 - `database/db.py`: Operaciones de base de datos con PostgreSQL.
-- `producer.py` / `consumer.py`: Scripts para transmisión de datos con Kafka.
+- `streaming/producer.py` / `consumer.py`: Scripts para transmisión de datos con Kafka.
 - `docker-compose.yml`: Configuración de Kafka y Zookeeper.
 
 ---
@@ -129,12 +131,12 @@ docker-compose up -d
 
 2. Crear un topic en Kafka (ej. `docker exec -it kafka_service kafka-topics --create --topic happiness_kafka_topic --bootstrap-server localhost:9092`).
 
-3. Ejecutar el productor:  
+3. Ejecutar el producer:  
    ```bash
    python streaming/producer.py
    ```
 
-4. Ejecutar el consumidor:  
+4. Ejecutar el consumer:  
    ```bash
    python streaming/consumer.py
    ```

@@ -23,7 +23,7 @@ def create_producer(max_retries=5, retry_interval=5):
     """Intenta conectar al broker de Kafka varias veces."""
     for attempt in range(1, max_retries + 1):
         try:
-            # Limitar max_in_flight_requests para evitar comparaciones de batches
+            
             producer = KafkaProducer(
                 bootstrap_servers=['localhost:9092'],
                 value_serializer=lambda v: json.dumps(v).encode('utf-8'),

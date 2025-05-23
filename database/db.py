@@ -57,7 +57,7 @@ happiness = Table(
     Column('family', Float, nullable=True),
     Column('health', Float, nullable=True),
     Column('freedom', Float, nullable=True),
-    Column('government_corruption', Float, nullable=True),
+    Column('perceptions_of_corruption', Float, nullable=True),
     Column('generosity', Float, nullable=True),
     Column('year', Integer, nullable=False),
     Column('predicted_happiness_score', Float, nullable=False)
@@ -76,7 +76,7 @@ def insert_happiness(record: dict):
     # 1) Convertir strings numéricos a los tipos correctos
     float_fields = [
         'happiness_score', 'economy', 'family',
-        'health', 'freedom', 'government_corruption',
+        'health', 'freedom', 'perceptions_of_corruption',
         'generosity', 'predicted_happiness_score'
     ]
     for fld in float_fields:

@@ -1,6 +1,6 @@
-# 🌍 Análisis de Felicidad Mundial con ETL y Machine Learning
+# 🌍 Análisis con Streaming de datos y Machine Learning
 
-Este proyecto, desarrollado como parte del **Workshop #3** de la **Universidad Autónoma de Occidente**, tiene como objetivo procesar y analizar datos de felicidad mundial de **2015 a 2019**. Utiliza técnicas de **ETL (Extracción, Transformación y Carga)**, *machine learning* para predecir puntajes de felicidad, y un flujo de datos en tiempo real con **Apache Kafka**, todo implementado mediante **Docker**.
+Este proyecto, tiene como objetivo procesar y analizar datos de felicidad mundial de **2015 a 2019**. Utiliza técnicas de **ETL (Extracción, Transformación y Carga)**, *machine learning* para predecir puntajes de felicidad, y un flujo de datos en tiempo real con **Apache Kafka**, todo implementado mediante **Docker**.
 
 ---
 
